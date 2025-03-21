@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.hover-button {
+    @apply outline-[#F3F3F3] outline-2 rounded-md bg-black p-2 text-[#F3F3F3];
+    @apply hover:bg-[#F3F3F3] hover:outline-black hover:text-black;
+    fill: #F3F3F3;
+    transition: fill 0.3s, color 0.3s, background-color 0.3s, outline-color 0.3s;
+}
+
+.hover-button:hover svg {
+    fill: black;
+}
+
+.underline {
+    background: linear-gradient(90deg, hsla(0, 0%, 95%, 0) 0%, #F3F3F3 50%, hsla(0, 0%, 95%, 0) 100%);
+}
