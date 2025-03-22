@@ -21,7 +21,7 @@ const App: React.FC = () => {
       <IconSection image={Icon} />
 
       {/* Links Section */}
-      <div className="flex flex-col justify-center sm:w-full md:w-3/4 lg:w-1/2">
+      <div className="flex flex-col justify-center xs:w-full md:w-3/4 lg:w-1/2">
         <div className="flex flex-col xl:flex-row justify-center w-full">
           <LinkColumn headerText="have money?" buttons={
             [

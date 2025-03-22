@@ -6,6 +6,12 @@ type NavProps = {
 };
 
 const Nav: React.FC<NavProps> = ({ siteName }) => {
+    /*
+        This component is the navigation bar at the top of the page.
+        It is used to display the site name and the theme changer.
+
+        @param (string) siteName: The name of the site to display in the navigation bar.
+    */
 
     const context = useAppContext();
     if (!context) return null;

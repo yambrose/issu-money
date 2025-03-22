@@ -14,7 +14,7 @@ const HeaderText: React.FC<HeaderTextProps> = ({ text }) => {
 
     return (
         <div className={`${isDarkMode ? 'is-dark-text' : 'is-light-text'} m-2 w-full flex flex-col items-center`}>
-            <h1 className="text-3xl">
+            <h1 className="text-3xl text-center">
                 {text}
             </h1>
             <Underline />
