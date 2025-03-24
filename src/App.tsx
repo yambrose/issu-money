@@ -25,22 +25,22 @@ const App: React.FC = () => {
         <div className="flex flex-col xl:flex-row justify-center w-full">
           <LinkColumn headerText="have money?" buttons={
             [
-              { icon: <PayPal />, text: "PayPal", url: "http://youtube.com" },
-              { icon: <CashApp />, text: "Cash App", url: "#" },
-              { icon: <Venmo />, text: "Venmo", url: "#" }
+              { icon: <PayPal />, text: "PayPal", url: "https://paypal.me/TheLivingPepsi" },
+              { icon: <CashApp />, text: "Cash App", url: "https://cash.app/$issumoney" },
+              { icon: <Venmo />, text: "Venmo", url: "https://venmo.com/u/thelivingpepsi" }
             ]
           } />
           <LinkColumn headerText="no money?" buttons={
             [
-              { icon: <Ad />, text: "Watch an ad :D", url: "#", subtext: "If you have no ad-blockers" },
-              { icon: <Roblox />, text: "Play my Roblox Game", url: "#", subtext: "If you have Roblox Premium" },
-              { icon: <Youtube />, text: "Watch my YouTube videos", url: "#", subtext: "If you have YouTube Premium" }
+              { icon: <Ad />, text: "Watch an ad :D", url: "/watch-an-ad", subtext: "If you have no ad-blockers" },
+              { icon: <Roblox />, text: "Play my Roblox Game", url: "https://www.roblox.com/games/17309179199", subtext: "If you have Roblox Premium" },
+              { icon: <Youtube />, text: "Watch my YouTube videos", url: "https://www.youtube.com/@TheLivingPepsi", subtext: "If you have YouTube Premium" }
             ]
           } />
         </div>
         <LinkColumn
           headerText="In the EU or truly broke?"
-          buttons={[{ icon: <Browser />, text: "Check out my site", url: "#", subtext: "(I don't beg as desperately here)" }]}
+          buttons={[{ icon: <Browser />, text: "Check out my site", url: "https://issu.cloud", subtext: "(I don't beg as desperately here)" }]}
         />
       </div>
 
