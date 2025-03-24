@@ -17,7 +17,7 @@ const App: React.FC = () => {
   return (
     <div className="h-screen flex flex-col select-none overflow-x-hidden items-center">
       
-      <Nav siteName="issu.money" />
+      <Nav siteName="give.issu.money" />
       <IconSection image={Icon} />
 
       {/* Links Section */}
