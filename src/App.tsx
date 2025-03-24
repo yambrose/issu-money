@@ -32,7 +32,7 @@ const App: React.FC = () => {
           } />
           <LinkColumn headerText="no money?" buttons={
             [
-              { icon: <Ad />, text: "Watch an ad :D", url: "#", subtext: "If you have no ad-blockers" },
+              { icon: <Ad />, text: "Watch an ad :D", url: "#", subtext: "If you have no ad-blockers", openInNewTab: false },
               { icon: <Roblox />, text: "Play my Roblox Game", url: "#", subtext: "If you have Roblox Premium" },
               { icon: <Youtube />, text: "Watch my YouTube videos", url: "#", subtext: "If you have YouTube Premium" }
             ]
