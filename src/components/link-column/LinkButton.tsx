@@ -6,9 +6,10 @@ type LinkButtonProps = {
     text: string;
     url?: string;
     subtext?: string;
+    openInNewTab?: boolean;
 };
 
-const LinkButton: React.FC<LinkButtonProps> = ({ icon, text, url = "#", subtext = "" }) => {
+const LinkButton: React.FC<LinkButtonProps> = ({ icon, text, url = "#", subtext = "", openInNewTab = true }) => {
     const context = useAppContext();
     if (!context) return null;
 
@@ -16,7 +17,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({ icon, text, url = "#", subtext 
 
     return (
         <div className={`${isDarkMode ? 'is-dark-text' : 'is-light-text'} w-full flex flex-col`}>
-            <a href={url} target="_blank" className={`outline-2 rounded-md hover-button ${isDarkMode ? 'hover-button-dark' : 'hover-button-light'}`}>
+            <a href={url} target={`${openInNewTab ? '_blank' : ''}`} className={`outline-2 rounded-md hover-button ${isDarkMode ? 'hover-button-dark' : 'hover-button-light'}`}>
                 <span className="flex items-center justify-center gap-2 text-xl">{icon}{text}</span>
             </a>
             <label className="text-[#757575] h-6 text-center">{subtext}</label>
