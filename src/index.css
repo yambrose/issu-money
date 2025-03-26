@@ -1,112 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-
-
 
 * {
-    font-family: 'JetBrains Mono', monospace;
-    scroll-behavior: smooth;
-    cursor: none;
+  font-family: "JetBrains Mono", monospace;
+  scroll-behavior: smooth;
+  cursor: none;
 }
 
-
+.disclaimer {
+  color: rgb(180, 180, 180);
+  font-size: smaller;
+  font-family: "Montserrat", serif;
+  font-style: italic;
+  font-weight: bold;
+}
 
 body.dark {
-    @apply bg-[#020202];
+  @apply bg-[#020202];
 }
 
 body.light {
-    background: #F3F3F3;
-    @apply bg-[#F3F3F3];
+  background: #f3f3f3;
+  @apply bg-[#F3F3F3];
 }
 
 .is-light-bg {
-    @apply bg-[#F3F3F3] outline-[#020202];
+  @apply bg-[#F3F3F3] outline-[#020202];
 }
 
 .is-dark-bg {
-    @apply bg-[#020202] outline-[#F3F3F3];
+  @apply bg-[#020202] outline-[#F3F3F3];
 }
 
 .is-light-text {
-    /* bg-[#F3F3F3] outline-[#020202]  */
-    @apply text-[#020202];
-    /* fill: #020202; */
+  /* bg-[#F3F3F3] outline-[#020202]  */
+  @apply text-[#020202];
+  /* fill: #020202; */
 }
 
 .is-dark-text {
-    /* bg-[#020202] outline-[#F3F3F3] */
-    @apply text-[#F3F3F3];
-    /* fill: #F3F3F3; */
+  /* bg-[#020202] outline-[#F3F3F3] */
+  @apply text-[#F3F3F3];
+  /* fill: #F3F3F3; */
 }
 
 .custom-pointer {
-    @apply fixed z-50 pointer-events-none w-5 h-5 rounded-full bg-[#F3F3F3] mix-blend-difference;
-    animation: grow 200ms ease-in-out forwards;
+  @apply fixed z-50 pointer-events-none w-5 h-5 rounded-full bg-[#F3F3F3] mix-blend-difference;
+  animation: grow 200ms ease-in-out forwards;
 }
 
 .is-hovering {
-    animation: shrink 200ms ease-in-out forwards;
+  animation: shrink 200ms ease-in-out forwards;
 }
 
 .hover-button-dark {
-    @apply outline-[#F3F3F3] outline-2 rounded-md bg-black p-2 text-[#F3F3F3];
-    @apply hover:bg-[#F3F3F3] hover:outline-black hover:text-black;
-    @apply active:bg-[#F3F3F3] active:outline-black active:text-black;
-    fill: #F3F3F3;
-    transition: fill 0.3s, color 0.3s, background-color 0.3s, outline-color 0.3s;
+  @apply outline-[#F3F3F3] outline-2 rounded-md bg-black p-2 text-[#F3F3F3];
+  @apply hover:bg-[#F3F3F3] hover:outline-black hover:text-black;
+  @apply active:bg-[#F3F3F3] active:outline-black active:text-black;
+  fill: #f3f3f3;
+  transition: fill 0.3s, color 0.3s, background-color 0.3s, outline-color 0.3s;
 }
 
 .hover-button-dark:hover svg {
-    fill: #020202;
+  fill: #020202;
 }
 
 .hover-button-light {
-    @apply outline-[#020202] outline-2 rounded-md bg-white p-2 text-[#020202];
-    @apply hover:bg-[#020202] hover:outline-white hover:text-white;
-    @apply active:bg-[#020202] active:outline-white active:text-white;
-    fill: #020202;
-    transition: fill 0.3s, color 0.3s, background-color 0.3s, outline-color 0.3s;
+  @apply outline-[#020202] outline-2 rounded-md bg-white p-2 text-[#020202];
+  @apply hover:bg-[#020202] hover:outline-white hover:text-white;
+  @apply active:bg-[#020202] active:outline-white active:text-white;
+  fill: #020202;
+  transition: fill 0.3s, color 0.3s, background-color 0.3s, outline-color 0.3s;
 }
 
 .hover-button-light:hover svg {
-    fill: #F3F3F3;
+  fill: #f3f3f3;
 }
 
 .pulse-effect:hover {
-    animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
 }
 
 @keyframes pulsing {
-    0% {
-        box-shadow: 0 0 0 0 rgba(243, 243, 243, 0.7);
-    }
+  0% {
+    box-shadow: 0 0 0 0 rgba(243, 243, 243, 0.7);
+  }
 
-    50% {
-        box-shadow: 0 0 0 15px rgba(243, 243, 243, 0);
-    }
+  50% {
+    box-shadow: 0 0 0 15px rgba(243, 243, 243, 0);
+  }
 
-    100% {
-        box-shadow: 0 0 0 0 rgba(243, 243, 243, 0);
-    }
+  100% {
+    box-shadow: 0 0 0 0 rgba(243, 243, 243, 0);
+  }
 }
 
 @keyframes shrink {
-    0% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
 
-    100% {
-        transform: scale(0);
-    }
+  100% {
+    transform: scale(0);
+  }
 }
 
 @keyframes grow {
-    0% {
-        transform: scale(0);
-    }
+  0% {
+    transform: scale(0);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
