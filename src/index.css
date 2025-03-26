@@ -46,11 +46,11 @@ body.light {
 }
 
 .custom-pointer-hold {
-    @apply fixed z-50 pointer-events-none w-5 h-5 mix-blend-difference;
+    @apply fixed z-100 pointer-events-none w-5 h-5 mix-blend-difference;
 }
 
 .custom-pointer {
-    @apply fixed z-50 pointer-events-none w-5 h-5 rounded-full bg-[#F3F3F3] mix-blend-difference;
+    @apply fixed z-100 pointer-events-none w-5 h-5 rounded-full bg-[#F3F3F3] mix-blend-difference;
     animation-name: "grow";
     animation: grow 200ms ease-in-out forwards;
 }
