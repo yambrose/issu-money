@@ -13,7 +13,7 @@ const Footer = () => {
             <span className="w-full flex flex-col justify-between h-max mt-2">
                 <span className="w-full flex flex-col lg:flex-row gap-4 justify-between h-max mt-6">
                     <p className="xs:w-full lg:w-1/4 text-center lg:text-start">© 2025 issu (Frank). All rights reserved.</p>
-                    <p className="w-full lg:w-1/2 text-center">Made with <a className="underline" href="https://github.com/yambrose">yambrose</a>. Powered by <a className="underline" href="https://billing.nixihost.com/aff.php?aff=362">Nixihost</a>, hopes, and dreams.</p>
+                    <p className="w-full lg:w-1/2 text-center">Made in collaboration with <a className="underline" href="https://github.com/yambrose">yambrose</a>. Powered by <a className="underline" href="https://billing.nixihost.com/aff.php?aff=362">Nixihost</a>, hopes, and dreams.</p>
                     <span className="w-full lg:w-1/4 flex gap-4 justify-center lg:justify-end h-max">
                         <p className="xs:w-full text-center lg:text-end"><a className="underline" href="/contact">Contact</a></p>
                         <p className="xs:w-full text-center lg:text-end"><a className="underline" href="https://github.com/TheLivingPepsi/issu-money">Source</a></p>
