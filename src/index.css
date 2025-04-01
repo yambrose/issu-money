@@ -1,22 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-
-
 
 * {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
     scroll-behavior: smooth;
     cursor: none;
 }
 
-
+.disclaimer {
+    color: rgb(180, 180, 180);
+    font-size: smaller;
+    font-family: "Montserrat", serif;
+    font-style: italic;
+    font-weight: bold;
+}
 
 body.dark {
     @apply bg-[#020202];
 }
 
 body.light {
-    background: #F3F3F3;
+    background: #f3f3f3;
     @apply bg-[#F3F3F3];
 }
 
@@ -40,8 +45,13 @@ body.light {
     /* fill: #F3F3F3; */
 }
 
+.custom-pointer-hold {
+    @apply fixed z-100 pointer-events-none w-5 h-5 mix-blend-difference;
+}
+
 .custom-pointer {
-    @apply fixed z-50 pointer-events-none w-5 h-5 rounded-full bg-[#F3F3F3] mix-blend-difference;
+    @apply fixed z-100 pointer-events-none w-5 h-5 rounded-full bg-[#F3F3F3] mix-blend-difference;
+    animation-name: "grow";
     animation: grow 200ms ease-in-out forwards;
 }
 
@@ -53,7 +63,7 @@ body.light {
     @apply outline-[#F3F3F3] outline-2 rounded-md bg-black p-2 text-[#F3F3F3];
     @apply hover:bg-[#F3F3F3] hover:outline-black hover:text-black;
     @apply active:bg-[#F3F3F3] active:outline-black active:text-black;
-    fill: #F3F3F3;
+    fill: #f3f3f3;
     transition: fill 0.3s, color 0.3s, background-color 0.3s, outline-color 0.3s;
 }
 
@@ -70,7 +80,7 @@ body.light {
 }
 
 .hover-button-light:hover svg {
-    fill: #F3F3F3;
+    fill: #f3f3f3;
 }
 
 .pulse-effect:hover {
