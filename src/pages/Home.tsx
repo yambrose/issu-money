@@ -1,23 +1,23 @@
-import LinkColumn from "./components/link-column/LinkColumn";
-import IconSection from "./components/IconSection";
-import Nav from "./components/nav/Nav";
-import PayPal from "./svgs/PayPal";
-import Icon from "./assets/pfp.jpg";
-import Footer from "./components/footer/Footer";
-import MovingBackground from "./components/MovingBackground";
-import CashApp from "./svgs/CashApp";
-import Venmo from "./svgs/Venmo";
-import Ad from "./svgs/Ad";
-import Roblox from "./svgs/Roblox";
-import Youtube from "./svgs/YouTube";
-import Browser from "./svgs/Browser";
+import LinkColumn from "../components/link-column/LinkColumn";
+import IconSection from "../components/IconSection";
+import PayPal from "../svgs/PayPal";
+import Icon from "../assets/pfp.jpg";
+import Footer from "../components/footer/Footer";
+// import MovingBackground from "../components/MovingBackground";
+import CashApp from "../svgs/CashApp";
+import Venmo from "../svgs/Venmo";
+import Ad from "../svgs/Ad";
+import Roblox from "../svgs/Roblox";
+import Youtube from "../svgs/YouTube";
+import Browser from "../svgs/Browser";
+import Nav from "../components/nav/Nav.tsx";
 
-const App: React.FC = () => {
+const Home: React.FC = () => {
 
   return (
     <div className="h-screen flex flex-col select-none overflow-x-hidden items-center">
-      
-      <Nav siteName="give.issu.money" />
+
+      {/*<Nav siteName="give.issu.money" />*/}
       <IconSection image={Icon} />
 
       {/* Links Section */}
@@ -45,10 +45,10 @@ const App: React.FC = () => {
       </div>
 
       <Footer />
-      <MovingBackground isFlipped={true}/>
-      <MovingBackground isFlipped={false}/>
+      {/*<MovingBackground isFlipped={true}/>*/}
+      {/*<MovingBackground isFlipped={false}/>*/}
     </div>
   )
 }
 
-export default App;
+export default Home;

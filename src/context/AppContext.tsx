@@ -21,7 +21,6 @@ export const AppContextProvider = ({ children }: { children: React.ReactNode }) 
     const [isMobile, setIsMobile] = useState(false);
 
     /* -- Check if Mobile -- */
-    /* -- Check if Mobile -- */
 useEffect(() => {
     const mobileCheck = function () {
         let check = false;

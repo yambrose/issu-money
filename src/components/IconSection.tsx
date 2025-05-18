@@ -19,8 +19,8 @@ const IconSection: React.FC<IconSectionProps> = ({ image }) => {
     return (
         <>
             <div className={`${isDarkMode ? 'is-dark-text' : 'is-light-text'} w-full flex flex-col justify-center items-center p-6 gap-2 text-center h-max`}>
-                <a href="https://x.com/slivia_cat/status/1808386631851749722" target="_blank" className="flex justify-center">
-                    <img className="w-1/2 lg:w-2/9 xl:w-1/9 m-6 hover:scale-105 transition-transform pulse-effect" src={image}
+                <a href="https://x.com/slivia_cat/status/1808386631851749722" target="_blank" className="flex justify-center w-1/2 lg:w-2/9 xl:w-1/9 m-6">
+                    <img className="hover:scale-105 transition-transform pulse-effect" src={image} alt="Slivia Cat Icon"
                         data-tooltip-id="tooltip" data-tooltip-content="Check out the artist's X page!"
                     />
                 </a>
