@@ -8,12 +8,16 @@
   --color-interact-primary: #FFD5B1;
   --color-interact-secondary: #6D5D7A;
   --color-interact-tertiary: #B5ABBE;
+
+  --text-size-sm: 16pt;
+  --text-size-md: 36pt;
+  --text-size-lg: 56pt;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: monospacel;
+  font-family: monospace;
   box-sizing: border-box;
   background-color: var(--color-background);
   color: var(--color-text-primary);
@@ -23,6 +27,6 @@ html {
     scrollbar-gutter: stable;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+a {
+    all: unset;
 }

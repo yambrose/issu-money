@@ -1,12 +1,14 @@
 <script lang="ts">
+	import NavButton from "./NavButton.svelte";
 </script>
 
 <aside class="sidebar">
     <nav>
+        <h1>John Pork</h1>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/settings">Settings</a></li>
+            <li><NavButton href="/" icon="🏠" label="Home" /></li>
+            <li><NavButton href="/about" icon="ℹ️" label="About" /></li>
+            <li><NavButton href="/contact" icon="📞" label="Contact" /></li>
         </ul>
     </nav>
 </aside>
@@ -16,9 +18,11 @@
         width: 7.5rem;
         height: 100dvh;
         background-color: var(--color-navbar);
-        border-right: 1px solid var(--color-interact-secondary);
-        padding: 1.5rem;
         box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .sidebar ul {
@@ -27,17 +31,9 @@
         margin: 0;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
         gap: 1rem;
     }
 
-    .sidebar a {
-        text-decoration: none;
-        color: var(--color-text-secondary);
-        font-weight: 500;
-        transition: color 0.2s;
-    }
-
-    .sidebar a:hover {
-        color: var(--color-interact-primary);
-    }
 </style>
