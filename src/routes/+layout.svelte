@@ -11,15 +11,12 @@
 </svelte:head>
 
 <div class="app-container">
-	<Sidebar />
 	<div class="content">
 		{@render children()}
 	</div>
+	<Sidebar />
 </div>
 
 <style>
-	.app-container {
-		display: flex;
-		height: 100dvh;
-	}
+
 </style>
