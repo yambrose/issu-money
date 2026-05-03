@@ -1,13 +1,21 @@
-<script>
+<script lang="ts">
     import { page } from "$app/state";
+    import type { Component } from 'svelte';
 
-    let { href, icon, label } = $props();
+    interface Props {
+        href: string;
+        icon: Component<{ width?: number; height?: number; fill?: string; stroke?: string }>;
+        label: string;
+    }
+    let { href, icon: Icon, label }: Props = $props();
     const isActive = $derived(page.url.pathname === href);
 </script>
 
 
 <a href={href} class="nav-button" class:active={isActive}>
-    <span class="icon">{icon}</span>
+    <span class="icon">
+        <Icon width={24} height={24} stroke="currentColor" />
+    </span>
     <span class="label">{label}</span>
 </a>
 
@@ -23,7 +31,7 @@
         width: 100%;
         aspect-ratio: 1/1;
         border: none;
-        border-radius: 1rem 0 0 1rem;
+        border-radius: 0.5rem 0 0 0.5rem;
     }
 
     .label {
@@ -33,6 +41,10 @@
     }
 
     .nav-button.active {
-        background: var(--color-background);
+        background: var(--color-background) !important;
+    }
+
+    .nav-button:hover {
+        background: var(--color-interact-secondary);
     }
 </style>
