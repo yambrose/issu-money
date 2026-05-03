@@ -1,17 +1,17 @@
 /* Main global styles */
 
 :root {
-  --color-background: #9B8DA6;
-  --color-navbar: #3F3446;
+  --color-background: #464269;
+  --color-navbar: #1F2131;
   --color-text-primary: #FFFFFF;
-  --color-text-secondary: #DEDEDE;
+  --color-text-secondary: #EDEBEE;
   --color-interact-primary: #FFD5B1;
   --color-interact-secondary: #6D5D7A;
-  --color-interact-tertiary: #B5ABBE;
+  --color-interact-tertiary: #8984B8;
 
-  --text-size-sm: 16pt;
-  --text-size-md: 36pt;
-  --text-size-lg: 56pt;
+  --text-size-sm: 12pt;
+  --text-size-md: 24pt;
+  --text-size-lg: 48pt;
 }
 
 body {

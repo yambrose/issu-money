@@ -12,7 +12,9 @@
 
 <div class="app-container">
 	<Sidebar />
-	{@render children()}
+	<div class="content">
+		{@render children()}
+	</div>
 </div>
 
 <style>

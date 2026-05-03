@@ -14,8 +14,12 @@
 </aside>
 
 <style>
+    h1 {
+        font-size: var(--text-size-md);
+    }
+
     .sidebar {
-        width: 7.5rem;
+        width: 5rem;
         height: 100dvh;
         background-color: var(--color-navbar);
         box-sizing: border-box;
@@ -33,7 +37,6 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        gap: 1rem;
     }
 
 </style>

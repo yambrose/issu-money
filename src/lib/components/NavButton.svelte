@@ -33,7 +33,6 @@
     }
 
     .nav-button.active {
-        color: var(--color-navbar);
         background: var(--color-background);
     }
 </style>
