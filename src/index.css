@@ -30,3 +30,8 @@ html {
 a {
     all: unset;
 }
+
+::selection {
+  background-color: var(--color-interact-secondary);
+  color: var(--color-text-secondary);
+}

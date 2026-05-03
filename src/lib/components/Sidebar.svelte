@@ -1,15 +1,17 @@
 <script lang="ts">
 	import NavButton from "./NavButton.svelte";
   import DefaultIcon from '$lib/components/icons/DefaultIcon.svelte';
+  import SettingsIcon from '$lib/components/icons/SettingsIcon.svelte';
 </script>
 
 <aside class="sidebar">
     <nav>
         <h1>John Pork</h1>
         <ul>
-            <li><NavButton href="/" icon={DefaultIcon} label="Home" /></li>
-            <li><NavButton href="/about" icon={DefaultIcon} label="About" /></li>
-            <li><NavButton href="/contact" icon={DefaultIcon} label="Contact" /></li>
+            <li><NavButton href="/" icon={DefaultIcon} iconProps={{width: 24, height: 24}} label="Home" /></li>
+            <li><NavButton href="/about" icon={DefaultIcon} iconProps={{width: 24, height: 24}} label="About" /></li>
+            <li><NavButton href="/contact" icon={DefaultIcon} iconProps={{width: 24, height: 24}} label="Contact" /></li>
+            <li class="bottom"><NavButton href="/settings" icon={SettingsIcon} iconProps={{width: 24, height: 24}} label="Settings" /></li>
         </ul>
     </nav>
 </aside>

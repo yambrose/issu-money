@@ -4,17 +4,18 @@
 
     interface Props {
         href: string;
-        icon: Component<{ width?: number; height?: number; fill?: string; stroke?: string }>;
+        icon: Component;
+        iconProps?: Record<string, unknown>;
         label: string;
     }
-    let { href, icon: Icon, label }: Props = $props();
+    let { href, icon: Icon, iconProps = {}, label }: Props = $props();
     const isActive = $derived(page.url.pathname === href);
 </script>
 
 
 <a href={href} class="nav-button" class:active={isActive}>
     <span class="icon">
-        <Icon width={24} height={24} stroke="currentColor" />
+        <Icon {...iconProps} stroke="currentColor" />
     </span>
     <span class="label">{label}</span>
 </a>
@@ -46,5 +47,6 @@
 
     .nav-button:hover {
         background: var(--color-interact-secondary);
+        color: var(--color-interact-primary);
     }
 </style>
