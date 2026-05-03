@@ -1,5 +1,4 @@
 <script lang="ts">
-    // Add your sidebar logic here
 </script>
 
 <aside class="sidebar">
@@ -14,10 +13,10 @@
 
 <style>
     .sidebar {
-        width: 250px;
-        height: 100vh;
-        background-color: #f3f4f6;
-        border-right: 1px solid #e5e7eb;
+        width: 7.5rem;
+        height: 100dvh;
+        background-color: var(--color-navbar);
+        border-right: 1px solid var(--color-interact-secondary);
         padding: 1.5rem;
         box-sizing: border-box;
     }
@@ -33,12 +32,12 @@
 
     .sidebar a {
         text-decoration: none;
-        color: #374151;
+        color: var(--color-text-secondary);
         font-weight: 500;
         transition: color 0.2s;
     }
 
     .sidebar a:hover {
-        color: #2563eb;
+        color: var(--color-interact-primary);
     }
 </style>
