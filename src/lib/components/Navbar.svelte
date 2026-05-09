@@ -4,7 +4,7 @@
 	import SettingsIcon from '$lib/components/icons/SettingsIcon.svelte';
 </script>
 
-<aside class="sidebar">
+<aside class="nav-bar">
 	<h1 class="nav-header">John Pork</h1>
 	<NavButton href="/" icon={DefaultIcon} iconProps={{width: 24, height: 24}} label="Home" />
 	<NavButton href="/about" icon={DefaultIcon} iconProps={{width: 24, height: 24}} label="About" />

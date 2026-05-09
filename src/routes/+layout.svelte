@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../index.css';
 	import favicon from '$lib/assets/favicon.svg';
-	import Sidebar from '$lib/components/Sidebar.svelte';
+	import Navbar from '$lib/components/Navbar.svelte';
 
 	let { children } = $props();
 </script>
@@ -14,7 +14,7 @@
 	<div class="content">
 		{@render children()}
 	</div>
-	<Sidebar />
+	<Navbar />
 </div>
 
 <style>

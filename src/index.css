@@ -9,10 +9,17 @@
     --color-interact-secondary: #6D5D7A;
     --color-interact-tertiary: #8984B8;
 
-    --text-size-tiny: 8pt;
-    --text-size-sm: 12pt;
-    --text-size-md: 24pt;
-    --text-size-lg: 48pt;
+    --full-screen-padding: 8rem;
+
+    --text-size-tiny: clamp(6pt, 1vw + 2pt, 8pt);
+    --text-size-sm: clamp(9pt, 1.5vw + 4pt, 12pt);
+    --text-size-md: clamp(12pt, 2vw + 6pt, 18pt);
+    --text-size-lg: clamp(24pt, 4vw + 12pt, 36pt);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -57,7 +64,16 @@ h1 {
     box-sizing: border-box;
 }
 
-.sidebar {
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 var(--full-screen-padding) 0 var(--full-screen-padding);
+}
+
+/* region Navbar */
+
+.nav-bar {
     width: 5rem;
     height: 100%;
     background-color: var(--color-navbar);
@@ -96,18 +112,26 @@ h1 {
     color: var(--color-interact-primary);
 }
 
-@media (max-width: 600px) {
+/* endregion Navbar */
+
+@media (max-width: 700px) {
 
     .nav-header {
         display: none;
     }
 
-    .sidebar {
+    .nav-bar {
+        position: fixed;
+        bottom: 0;
         justify-content: center;
     }
 
     .app-container {
         flex-direction: column;
+    }
+
+    section {
+        padding: 0;
     }
 
     .nav-button {
@@ -125,7 +149,7 @@ h1 {
         font-size: var(--text-size-sm);
     }
 
-    .sidebar {
+    .nav-bar {
         width: 100%;
         height: 5rem;
         flex-direction: row;
